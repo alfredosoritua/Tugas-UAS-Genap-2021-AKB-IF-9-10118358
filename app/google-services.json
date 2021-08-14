@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "85162011053",
+    "project_id": "bandung-travelling",
+    "storage_bucket": "bandung-travelling.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85162011053:android:751259da42bc5b20629924",
+        "android_client_info": {
+          "package_name": "com.alfredosoritua.tugas_uas_akb_2021_10118358"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85162011053-n1cpv2p3tp9qveoqi50p3ja3vq7v0lsi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBh52i-412m9EpBX_mdPwANWP8_K5-EmEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85162011053-n1cpv2p3tp9qveoqi50p3ja3vq7v0lsi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

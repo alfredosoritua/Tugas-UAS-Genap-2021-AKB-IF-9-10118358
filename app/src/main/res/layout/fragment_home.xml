@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/blue"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.menu.HomeFragment">
+        <TextView
+            android:id="@+id/wisata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bold_and_stylish"
+            android:text="Wisata"
+            android:textColor="@color/white"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/yuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wisata"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/bold_and_stylish"
+            android:text="Yuk !"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/tvPilihWisata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yuk"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="20dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Pilih tempat wisata"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPilihWisata"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:id="@+id/btnPilih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rvHome"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/blue"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="100dp"
+            android:text="pilih" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rvHome"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/blue"
+            android:layout_alignBaseline="@id/btnPilih"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="100dp"
+            android:text="reset" />
+
+        <RelativeLayout
+            android:id="@+id/layoutDeskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnPilih">
+
+            <TextView
+                android:id="@+id/tvDetailWisata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="20dp"
+                android:fontFamily="sans-serif-light"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/ivGambarTempatWisata"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/tvDetailWisata"
+                android:layout_marginHorizontal="20dp" />
+
+            <TextView
+                android:id="@+id/tvDetailNamaTempat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivGambarTempatWisata"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-light"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvDetailKategori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDetailNamaTempat"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-light"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvDetailAlamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDetailKategori"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-light"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvDetailNoTelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDetailAlamat"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-light"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvDetailDeskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDetailNoTelp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-light"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

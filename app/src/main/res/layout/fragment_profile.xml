@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.menu.ProfileFragment">
+    <TextView
+        android:id="@+id/tvTitleProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="20dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Profile"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="36sp"
+        android:letterSpacing="0.1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvTitleProfile"
+        android:background="@drawable/profile_bg">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/tvNimProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="NIM : 10118358"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+        <TextView
+            android:id="@+id/tvNamaProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNimProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Nama : Alfredo Soritua"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+        <TextView
+            android:id="@+id/tvKelasProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNamaProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Kelas : IF - 9"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+        <TextView
+            android:id="@+id/tvEmailProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvKelasProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Email : Alfredo007.as@gmail.com"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".ui.info.InfoFragment1">
+    <ImageView
+        android:id="@+id/ivDotChecked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_outline_radio_button_checked_24"/>
+    <ImageView
+        android:id="@+id/ivDotUnChecked1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/ivDotChecked"
+        android:src="@drawable/ic_baseline_radio_button_unchecked_24"/>
+    <ImageView
+        android:id="@+id/ivDotUnChecked2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/ivDotUnChecked1"
+        android:src="@drawable/ic_baseline_radio_button_unchecked_24"/>
+    <RelativeLayout
+        android:id="@+id/layout_info1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/wisata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="100dp"
+            android:fontFamily="@font/bold_and_stylish"
+            android:text="Wisata"
+            android:textColor="@color/white"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/yuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wisata"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/bold_and_stylish"
+            android:text="Yuk !"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="48sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvDetailPage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_info1"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Jelajahi tempat wisata di Bandung Raya yuk !"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/ivInfo1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
